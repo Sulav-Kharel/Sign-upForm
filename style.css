@@ -1,0 +1,84 @@
+:root {
+    --DarkSlateGrey: hsl(234, 29%, 20%);
+    --CharcoalGrey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+    --Tomato: hsl(4, 100%, 67%)
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: url("assets/images/icon-list.svg");
+    background-size: 16px;
+
+}
+
+body {
+    background-color: var(--DarkSlateGrey);
+}
+
+.card-container {
+    width: max-content;
+    margin-inline: auto;
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--White);
+    padding: 1%;
+    border-radius: 24px;
+    grid-column-gap: 3%;
+}
+
+.card-content {
+    margin-top: 25%;
+    width: 90%;
+    margin-inline: auto;
+}
+
+.list-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    grid-column-gap: 2%;
+}
+
+.card-form {
+    margin-top: 10%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    margin-bottom: 8px;
+    color: var(--CharcoalGrey);
+  }
+
+  input {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+
+  button {
+    width: 100%;
+    padding: 16px;
+    background-color: var(--Tomato);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: var(--CharcoalGrey);
+  }
