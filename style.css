@@ -11,14 +11,15 @@ ul {
     padding: 0;
 }
 
-li {
-    background: url("assets/images/icon-list.svg");
-    background-size: 16px;
-
+h1 {
+    font-weight: 700;
+    color: var(--DarkSlateGrey);
+    font-size: 3em;
 }
 
 body {
     background-color: var(--DarkSlateGrey);
+    font-family: 'Roboto';
 }
 
 .card-container {
@@ -31,10 +32,11 @@ body {
     padding: 1%;
     border-radius: 24px;
     grid-column-gap: 3%;
+    box-shadow: 0 1px 4px var(--DarkSlateGrey);
 }
 
 .card-content {
-    margin-top: 25%;
+    margin-top: 10%;
     width: 90%;
     margin-inline: auto;
 }
@@ -57,7 +59,8 @@ form {
 
   label {
     margin-bottom: 8px;
-    color: var(--CharcoalGrey);
+    color: var(--DarkSlateGrey);
+    font-weight: 700;
   }
 
   input {
@@ -77,6 +80,7 @@ form {
     border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.3s;
+    box-shadow: 0 2px 6px var(--Grey);
   }
 
   button:hover {
