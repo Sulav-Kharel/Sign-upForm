@@ -6,6 +6,11 @@
     --Tomato: hsl(4, 100%, 67%)
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -35,6 +40,63 @@ body {
     box-shadow: 0 1px 4px var(--DarkSlateGrey);
 }
 
+@media (max-width: 768px) {
+  .card-container {
+      grid-template-columns: 1fr;
+  }
+
+  .card-img img {
+    content: url('assets/images/illustration-sign-up-mobile.svg');
+    width: 100%;
+  }
+
+  .card-content {
+    order: 2;
+  }
+
+  .card-container {
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    width: 100%;
+  }
+
+  .card-form {
+    margin-bottom: 10%;
+  }
+
+  .card-form button {
+    background-color: var(--DarkSlateGrey);
+  }
+
+  .thankyou-screen {
+    margin-top: 40% !important;
+    width: 90% !important;
+  }
+
+  .thankyou-screen button {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 20%;
+    width: 90%;
+    background-color: var(--DarkSlateGrey);
+  }
+
+  .thankyou-screen h1 {
+    margin-top: 10%;
+  }
+
+  body {
+    background-color: var(--White);
+  }
+}
+
+@media (min-width: 768px) {
+  .card-container {
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
 .card-content {
     margin-top: 10%;
     width: 90%;
@@ -53,36 +115,75 @@ body {
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-  }
+  display: flex;
+  flex-direction: column;
+}
 
-  label {
-    margin-bottom: 8px;
-    color: var(--DarkSlateGrey);
-    font-weight: 700;
-  }
+label {
+  color: var(--DarkSlateGrey);
+  font-weight: 700;
+}
 
-  input {
-    width: 100%;
-    padding: 16px;
-    margin-bottom: 16px;
-    box-sizing: border-box;
-    border-radius: 6px;
-  }
+input {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
 
-  button {
-    width: 100%;
-    padding: 16px;
-    background-color: var(--Tomato);
-    color: #fff;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    box-shadow: 0 2px 6px var(--Grey);
-  }
+button {
+  width: 100%;
+  padding: 16px;
+  background-color: var(--Tomato);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 6px var(--Grey);
+}
 
-  button:hover {
-    background-color: var(--CharcoalGrey);
-  }
+button:hover {
+  background-color: var(--CharcoalGrey);
+}
+
+.thankyou-screen {
+  width: 25%;
+  margin-inline: auto;
+  margin-top: 10%;
+  background-color: var(--White);
+  padding: 3%;
+  border-radius: 24px;
+  display: none;
+}
+
+.thankyou-screen p {
+  padding: 0.5em 0;
+  margin: 1em 0;
+}
+
+.thankyou-screen h1 {
+  margin-top: 10%;
+}
+
+.form-flex {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  color: var(--Tomato);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.card-content h1 {
+  margin: 10% 0;
+}
+
+.card-list p {
+  padding: 0.5em 0;
+}
+
+.subtitle {
+  padding: 0.5em 0;
+}
