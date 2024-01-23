@@ -25,8 +25,7 @@ document.addEventListener('DOMContentLoaded', function(){
         } else {
             emailInput.style.borderColor = ' var(--Tomato)';
             errorMessage.textContent = 'Valid email required';
-        }
-        
+        }   
     });
 
     dismiss.addEventListener('click', function() {
