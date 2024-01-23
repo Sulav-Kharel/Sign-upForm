@@ -19,7 +19,7 @@ ul {
 h1 {
     font-weight: 700;
     color: var(--DarkSlateGrey);
-    font-size: 3em;
+    font-size: 3.5em;
 }
 
 body {
@@ -134,7 +134,7 @@ input {
 button {
   width: 100%;
   padding: 16px;
-  background-color: var(--Tomato);
+  background-color: var(--DarkSlateGrey);
   color: #fff;
   border: none;
   border-radius: 6px;
